@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookShelf — Book Information</title>
+  <style>
+    *{box-sizing:border-box}html,body{margin:0;height:100%;overflow:hidden;font-family:Georgia,'Times New Roman',serif;background:#f5f1e8;color:#25231f}
+    .topbar{height:78px;background:#24231f;color:#f8f3e8;display:flex;align-items:center;justify-content:space-between;padding:0 28px;border-bottom:4px solid #b58b55}
+    .brand{display:flex;align-items:center;gap:12px}.mark{width:38px;height:38px;border:1px solid #d8b57d;display:grid;place-items:center;font-size:19px}.brand h1{font-size:22px;letter-spacing:.08em;margin:0}.brand small{display:block;color:#c9bda8;font:11px Arial,sans-serif;letter-spacing:.16em;margin-top:3px}
+    .tag{font:11px Arial,sans-serif;letter-spacing:.14em;color:#d8c8ad;text-transform:uppercase}
+    .layout{height:calc(100vh - 78px);display:grid;grid-template-columns:300px 1fr}
+    iframe{width:100%;height:100%;border:0;display:block}.left{border-right:1px solid #d7cbb8;background:#eee8dc}.right{background:#f9f6ef}
+    @media(max-width:700px){.layout{grid-template-columns:230px}.topbar{padding:0 16px}.tag{display:none}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><div class="mark">B</div><div><h1>BOOKSHELF</h1><small>READ • DISCOVER • REMEMBER</small></div></div>
+    <div class="tag">A quiet corner for good books</div>
+  </header>
+  <main class="layout">
+    <section class="left"><iframe src="books.html" title="Books list"></iframe></section>
+    <section class="right"><iframe src="details.html" name="bookDetails" title="Book information"></iframe></section>
+  </main>
+</body>
+</html>
